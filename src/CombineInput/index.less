@@ -1,0 +1,43 @@
+@import '../styles/var.less';
+
+.yap-combine {
+  &__tips {
+    margin: 0 0 @Sp-2;
+  }
+  &__error {
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    span {
+      position: absolute;
+      height: 20px;
+      top: -10px;
+      opacity: 0;
+      transition: all 0.3s;
+      color: @M3;
+      &.show {
+        color: #ff475a;
+        opacity: 1;
+        top: 0;
+      }
+    }
+  }
+}
+
+.yap-combine-multiple-num {
+  display: inline-block;
+  padding: 0 @Sp-3;
+  color: @M4;
+  &--yellow {
+    color: @D2;
+  }
+}
+
+.yap-combine-multiple-box {
+  border-radius: @Ra-2;
+  border: 1px solid #d9d9d9;
+  &-inner {
+    padding: @Sp-5;
+  }
+}
