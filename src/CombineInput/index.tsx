@@ -106,17 +106,20 @@ const CombineInput: React.ForwardRefRenderFunction<
   };
 
   // 大块头 内 tag 点击删除
-  const onTagClose = function(e: React.MouseEvent<HTMLElement>, single: string) {
+  const onTagClose = function (
+    e: React.MouseEvent<HTMLElement>,
+    single: string,
+  ) {
     e.preventDefault();
     let arr = [...multiple];
-    const index = arr.findIndex(e => e === single);
+    const index = arr.findIndex((e) => e === single);
     arr.splice(index, 1);
     triggerChange('', arr);
     setMultiple([...arr]);
   };
 
   return (
-    <div className={classnames('yap-combine', className)} ref={ref}>
+    <div className={classnames('c-combine', className)} ref={ref}>
       <Input
         size={size}
         type="text"
@@ -128,28 +131,28 @@ const CombineInput: React.ForwardRefRenderFunction<
         placeholder="手动输入点击回车添加"
         allowClear
       ></Input>
-      <p className={'yap-combine__error'}>
+      <p className={'c-combine__error'}>
         <span
           className={classnames('error-text', {
-            'show': errorText,
+            show: errorText,
           })}
         >
           {error}
         </span>
       </p>
-      <p className={'yap-combine__tips'}>
+      <p className={'c-combine__tips'}>
         已添加
         <span
-          className={classnames('yap-combine-multiple-num', {
-            ['yap-combine-multiple-num--yellow']: multiple.length,
+          className={classnames('c-combine-multiple-num', {
+            ['c-combine-multiple-num--yellow']: multiple.length,
           })}
         >
           {multiple.length}
         </span>
         个
       </p>
-      <div className={'yap-combine-multiple-box'} style={{ minHeight: 200 }}>
-        <div className={'yap-combine-multiple-box-inner'}>
+      <div className={'c-combine-multiple-box'} style={{ minHeight: 200 }}>
+        <div className={'c-combine-multiple-box-inner'}>
           {multiple.length > 0 &&
             multiple.map((single, index) => (
               <Tag

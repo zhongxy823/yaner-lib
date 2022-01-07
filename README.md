@@ -1,4 +1,4 @@
-# yap-lib
+# yaner-lib
 
 ## Getting Started
 

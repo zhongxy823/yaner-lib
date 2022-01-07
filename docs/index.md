@@ -6,14 +6,14 @@ order: 0
 ## 引用组件
 
 ```sh
-yarn add yap-lib
+yarn add yaner-lib
 ```
 
 ## 使用组件
 
 ```javascript
 import React from 'react';
-import { Image } from 'yap-lib';
+import { Image } from 'yaner-lib';
 
 const Wrapper: React.SF = () => {
   return (
