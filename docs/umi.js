@@ -7453,7 +7453,7 @@
               ),
               'IpInput',
             ),
-            o.a.createElement('p', null, 'ip\u8f93\u5165\u6846'),
+            o.a.createElement('p', null, 'ip \u8f93\u5165\u6846'),
             o.a.createElement('p', null, 'Demo:'),
           ),
           o.a.createElement(
@@ -12484,66 +12484,6 @@
     }
     e.exports = n;
   },
-  'F+kV': function (e, t, n) {
-    'use strict';
-    n.r(t);
-    var r = n('q1tI'),
-      o = n.n(r),
-      a = n('dEAq'),
-      i = n('ZpkN');
-    n('Rsk4');
-    t['default'] = (e) => (
-      o.a.useEffect(() => {
-        null !== e &&
-          void 0 !== e &&
-          e.location.hash &&
-          a['AnchorLink'].scrollToAnchor(
-            decodeURIComponent(e.location.hash.slice(1)),
-          );
-      }, []),
-      o.a.createElement(
-        o.a.Fragment,
-        null,
-        o.a.createElement(
-          'div',
-          { className: 'markdown' },
-          o.a.createElement(
-            'h2',
-            { id: '\u5f15\u7528\u7ec4\u4ef6' },
-            o.a.createElement(
-              a['AnchorLink'],
-              {
-                to: '#\u5f15\u7528\u7ec4\u4ef6',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              o.a.createElement('span', { className: 'icon icon-link' }),
-            ),
-            '\u5f15\u7528\u7ec4\u4ef6',
-          ),
-          o.a.createElement(i['a'], { code: 'yarn add yap-lib', lang: 'sh' }),
-          o.a.createElement(
-            'h2',
-            { id: '\u4f7f\u7528\u7ec4\u4ef6' },
-            o.a.createElement(
-              a['AnchorLink'],
-              {
-                to: '#\u4f7f\u7528\u7ec4\u4ef6',
-                'aria-hidden': 'true',
-                tabIndex: -1,
-              },
-              o.a.createElement('span', { className: 'icon icon-link' }),
-            ),
-            '\u4f7f\u7528\u7ec4\u4ef6',
-          ),
-          o.a.createElement(i['a'], {
-            code: "import React from 'react';\nimport { Image } from 'yap-lib';\n\nconst Wrapper: React.SF = () => {\n  return (\n    <div>\n      <Image src=\"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg\" />\n    </div>\n  );\n};\n\nexport default Wrapper;",
-            lang: 'javascript',
-          }),
-        ),
-      )
-    );
-  },
   F2Bo: function (e, t, n) {
     'use strict';
     var r = n('QGpR');
@@ -12764,7 +12704,7 @@
         return a;
       });
     var r = n('YS25'),
-      o = { basename: '/' };
+      o = { basename: '/yaner-lib' };
     window.routerBase && (o.basename = window.routerBase);
     var a = Object({ NODE_ENV: 'production' }).__IS_SERVER
         ? null
@@ -14179,6 +14119,66 @@
         throw TypeError('Incorrect invocation');
       return +e;
     };
+  },
+  Jqcq: function (e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('q1tI'),
+      o = n.n(r),
+      a = n('dEAq'),
+      i = n('ZpkN');
+    n('Rsk4');
+    t['default'] = (e) => (
+      o.a.useEffect(() => {
+        null !== e &&
+          void 0 !== e &&
+          e.location.hash &&
+          a['AnchorLink'].scrollToAnchor(
+            decodeURIComponent(e.location.hash.slice(1)),
+          );
+      }, []),
+      o.a.createElement(
+        o.a.Fragment,
+        null,
+        o.a.createElement(
+          'div',
+          { className: 'markdown' },
+          o.a.createElement(
+            'h2',
+            { id: '\u5f15\u7528\u7ec4\u4ef6' },
+            o.a.createElement(
+              a['AnchorLink'],
+              {
+                to: '#\u5f15\u7528\u7ec4\u4ef6',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u5f15\u7528\u7ec4\u4ef6',
+          ),
+          o.a.createElement(i['a'], { code: 'yarn add yaner-lib', lang: 'sh' }),
+          o.a.createElement(
+            'h2',
+            { id: '\u4f7f\u7528\u7ec4\u4ef6' },
+            o.a.createElement(
+              a['AnchorLink'],
+              {
+                to: '#\u4f7f\u7528\u7ec4\u4ef6',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u4f7f\u7528\u7ec4\u4ef6',
+          ),
+          o.a.createElement(i['a'], {
+            code: "import React from 'react';\nimport { Image } from 'yaner-lib';\n\nconst Wrapper: React.SF = () => {\n  return (\n    <div>\n      <Image src=\"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg\" />\n    </div>\n  );\n};\n\nexport default Wrapper;",
+            lang: 'javascript',
+          }),
+        ),
+      )
+    );
   },
   'K+nK': function (e, t) {
     function n(e) {
@@ -16831,7 +16831,7 @@
           previewerProps: {
             sources: {
               _: {
-                tsx: "import React from 'react';\nimport { CombineInput } from 'yaner-lib';\n\nexport default () => <CombineInput />",
+                tsx: "import React from 'react';\nimport { CombineInput } from 'yaner-lib';\n\nexport default () => <CombineInput />;",
               },
             },
             dependencies: {
@@ -16897,7 +16897,7 @@
           previewerProps: {
             sources: {
               _: {
-                tsx: "import React, { useState } from 'react';\nimport { IpInput } from 'yaner-lib';\n\nconst IPage: React.FC = () => {\n    const [value, setValue] = useState()\n    return <IpInput value={value} onChange={(e) => setValue(e)} />\n}\n\nexport default IPage;\n",
+                tsx: "import React, { useState } from 'react';\nimport { IpInput } from 'yaner-lib';\n\nconst IPage: React.FC = () => {\n  const [value, setValue] = useState();\n  return <IpInput value={value} onChange={(e) => setValue(e)} />;\n};\n\nexport default IPage;",
               },
             },
             dependencies: {
@@ -16921,7 +16921,7 @@
           previewerProps: {
             sources: {
               _: {
-                tsx: "import React from 'react';\nimport { PersonInput } from 'yaner-lib';\n\nexport default () => <PersonInput />",
+                tsx: "import React from 'react';\nimport { PersonInput } from 'yaner-lib';\n\nexport default () => <PersonInput />;",
               },
             },
             dependencies: {
@@ -27083,7 +27083,7 @@
   },
   q3YX: function (e) {
     e.exports = JSON.parse(
-      '{"menus":{"en-US":{"*":[{"path":"/","title":"\u5feb\u901f\u4e0a\u624b","meta":{"order":0}},{"title":"CombineInput","path":"/combine-input","meta":{"order":2},"children":[]},{"title":"PersonInput","path":"/person-input","meta":{"order":3},"children":[]},{"title":"IpInput","path":"/ip-input","meta":{"order":4},"children":[]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{},"title":"yap-lib v1.0.0","logo":"https://shitu-query-nj.su.bcebos.com/2021-06-15/14/a92049bc9252f9d9?authorization=bce-auth-v1%2F7e22d8caf5af46cc9310f1e3021709f3%2F2021-06-15T06%3A27%3A47Z%2F300%2Fhost%2F11e1800ebe3cfa6f22ab9b48a8131e9b0c3732bcbf771f5e870dae4b7f31f7fb","mode":"doc","repository":{"url":"","branch":"master"},"theme":{}}',
+      '{"menus":{"en-US":{"*":[{"path":"/","title":"\u5feb\u901f\u4e0a\u624b","meta":{"order":0}},{"title":"CombineInput","path":"/combine-input","meta":{"order":2},"children":[]},{"title":"PersonInput","path":"/person-input","meta":{"order":3},"children":[]},{"title":"IpInput","path":"/ip-input","meta":{"order":4},"children":[]}]}},"locales":[{"name":"en-US","label":"English"}],"navs":{},"title":"yaner-lib v1.0.0","logo":"https://shitu-query-nj.su.bcebos.com/2021-06-15/14/a92049bc9252f9d9?authorization=bce-auth-v1%2F7e22d8caf5af46cc9310f1e3021709f3%2F2021-06-15T06%3A27%3A47Z%2F300%2Fhost%2F11e1800ebe3cfa6f22ab9b48a8131e9b0c3732bcbf771f5e870dae4b7f31f7fb","mode":"doc","repository":{"url":"","branch":"master"},"theme":{}}',
     );
   },
   qHiR: function (e, t, n) {},
@@ -29498,12 +29498,37 @@
           wrappers: [n('KcUY').default, n('JBu9').default],
           routes: [
             {
+              path: '/',
+              component: n('Jqcq').default,
+              exact: !0,
+              meta: {
+                filePath: 'src/index.md',
+                updatedTime: 1641583315549,
+                title: '\u5feb\u901f\u4e0a\u624b',
+                order: 0,
+                nav: '/yaner-lib',
+                slugs: [
+                  {
+                    depth: 2,
+                    value: '\u5f15\u7528\u7ec4\u4ef6',
+                    heading: '\u5f15\u7528\u7ec4\u4ef6',
+                  },
+                  {
+                    depth: 2,
+                    value: '\u4f7f\u7528\u7ec4\u4ef6',
+                    heading: '\u4f7f\u7528\u7ec4\u4ef6',
+                  },
+                ],
+              },
+              title: '\u5feb\u901f\u4e0a\u624b',
+            },
+            {
               path: '/combine-input',
               component: n('b5W4').default,
               exact: !0,
               meta: {
                 filePath: 'src/CombineInput/index.md',
-                updatedTime: 1623766129e3,
+                updatedTime: 1641580329e3,
                 componentName: 'CombineInput',
                 title: 'CombineInput',
                 order: 2,
@@ -29520,7 +29545,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/IpInput/index.md',
-                updatedTime: 1641579756876,
+                updatedTime: 1641580329e3,
                 componentName: 'IpInput',
                 title: 'IpInput',
                 order: 4,
@@ -29535,7 +29560,7 @@
               exact: !0,
               meta: {
                 filePath: 'src/PersonInput/index.md',
-                updatedTime: 1623766129e3,
+                updatedTime: 1641580329e3,
                 componentName: 'PersonInput',
                 title: 'PersonInput',
                 order: 3,
@@ -29546,32 +29571,8 @@
               },
               title: 'PersonInput',
             },
-            {
-              path: '/',
-              component: n('F+kV').default,
-              exact: !0,
-              meta: {
-                filePath: 'docs/index.md',
-                updatedTime: 1623766129e3,
-                title: '\u5feb\u901f\u4e0a\u624b',
-                order: 0,
-                slugs: [
-                  {
-                    depth: 2,
-                    value: '\u5f15\u7528\u7ec4\u4ef6',
-                    heading: '\u5f15\u7528\u7ec4\u4ef6',
-                  },
-                  {
-                    depth: 2,
-                    value: '\u4f7f\u7528\u7ec4\u4ef6',
-                    heading: '\u4f7f\u7528\u7ec4\u4ef6',
-                  },
-                ],
-              },
-              title: '\u5feb\u901f\u4e0a\u624b',
-            },
           ],
-          title: 'yap-lib v1.0.0',
+          title: 'yaner-lib v1.0.0',
           component: (e) => e.children,
         },
       ];
@@ -29600,7 +29601,7 @@
                 history: Object(o['a'])(e.hot),
                 isServer: Object({ NODE_ENV: 'production' }).__IS_SERVER,
                 rootElement: 'root',
-                defaultTitle: 'yap-lib v1.0.0',
+                defaultTitle: 'yaner-lib v1.0.0',
               },
             });
             return U(t);
