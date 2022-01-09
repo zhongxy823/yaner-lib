@@ -16,4 +16,4 @@ import { PersonInput } from 'yaner-lib';
 export default () => <PersonInput />;
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+<API></API>

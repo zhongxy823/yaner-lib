@@ -1,6 +1,6 @@
 ---
 title: CombineInput
-order: 2
+order: 3
 ---
 
 ## CombineInput
@@ -16,4 +16,4 @@ import { CombineInput } from 'yaner-lib';
 export default () => <CombineInput />;
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+<API></API>

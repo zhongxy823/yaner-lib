@@ -2,8 +2,20 @@ import React, { useState, useRef } from 'react';
 import { Input } from 'antd';
 
 export interface PersonValue {
+  /**
+   * @description       姓名
+   * @default           -
+   */
   name?: string;
+  /**
+   * @description       身份证
+   * @default           -
+   */
   idCard?: string;
+  /**
+   * @description       手机号
+   * @default           -
+   */
   phone?: string;
 }
 
@@ -83,7 +95,7 @@ const IComponent: React.FC<IComponentProps> = ({ value = {}, onChange }) => {
         type="text"
         ref={nameRef}
         value={value.name || name}
-        onChange={(e) => onValueChange(e, 'name')}
+        onChange={e => onValueChange(e, 'name')}
         placeholder="请输入姓名"
         style={{ width: 160, marginRight: '8px' }}
       />
@@ -92,8 +104,8 @@ const IComponent: React.FC<IComponentProps> = ({ value = {}, onChange }) => {
         ref={idCardRef}
         value={value.idCard || idCard}
         placeholder="请输入身份证号"
-        onChange={(e) => onValueChange(e, 'idCard')}
-        onKeyDown={(e) => onKeyDown(e, 'idCard')}
+        onChange={e => onValueChange(e, 'idCard')}
+        onKeyDown={e => onKeyDown(e, 'idCard')}
         style={{ width: 200, marginRight: '8px' }}
       />
       <Input
@@ -101,8 +113,8 @@ const IComponent: React.FC<IComponentProps> = ({ value = {}, onChange }) => {
         ref={phoneRef}
         placeholder="请输入手机号"
         value={value.phone || phone}
-        onChange={(e) => onValueChange(e, 'phone')}
-        onKeyDown={(e) => onKeyDown(e, 'phone')}
+        onChange={e => onValueChange(e, 'phone')}
+        onKeyDown={e => onKeyDown(e, 'phone')}
         style={{ width: 200 }}
       />
     </span>

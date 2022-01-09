@@ -15,10 +15,10 @@ import { IpInput } from 'yaner-lib';
 
 const IPage: React.FC = () => {
   const [value, setValue] = useState();
-  return <IpInput value={value} onChange={(e) => setValue(e)} />;
+  return <IpInput value={value} onChange={e => setValue(e)} />;
 };
 
 export default IPage;
 ```
 
-More skills for writing demo: https://d.umijs.org/guide/demo-principle
+<API></API>

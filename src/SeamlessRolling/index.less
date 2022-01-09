@@ -1,0 +1,53 @@
+.c-seamless-rolling-content {
+  height: 100%;
+  width: 100%;
+}
+.c-seamless-rolling {
+  position: relative;
+  min-width: 300px;
+  width: calc(100%);
+  height: 100%;
+  // margin: 0 0 0 -6px;
+  overflow: hidden;
+  // border: 1px solid;
+  // box-sizing: content-box;
+  &--transverse {
+    &.noRolling {
+      width: calc(100% + 12px);
+      margin: 0 0 0 -6px;
+    }
+  }
+  &--vertical {
+    &.noRolling {
+      height: calc(100% + 12px);
+      margin: 0 -12px 0 0;
+    }
+  }
+  &-warp {
+    animation-play-state: running !important;
+    height: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  &-item {
+    text-align: center;
+    height: 100%;
+    &--transverse {
+      float: left;
+      margin: 0 6px;
+    }
+    &--vertical {
+      margin: 12px 0;
+    }
+  }
+  &.hoverStop {
+    .c-seamless-rolling-item {
+      cursor: pointer;
+    }
+    &:hover {
+      .c-seamless-rolling-warp {
+        animation-play-state: paused !important;
+      }
+    }
+  }
+}

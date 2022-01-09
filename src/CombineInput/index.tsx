@@ -10,14 +10,50 @@ interface CombineValue {
 }
 
 interface CombineInputProps {
+  /**
+   * @description       子元素
+   * @default           -
+   */
   children?: React.ReactNode;
+  /**
+   * @description       class
+   * @default           -
+   */
   className?: string;
+  /**
+   * @description       style
+   * @default           -
+   */
   style?: React.CSSProperties;
+  /**
+   * @description       value
+   * @default           -
+   */
   value?: CombineValue; // value
+  /**
+   * @description       onChange事件
+   * @default           -
+   */
   onChange?: (value: object) => void; // onchange 事件
+  /**
+   * @description       大小
+   * @default           -
+   */
   size?: 'large' | 'middle' | 'small'; // 输入框 的 size
+  /**
+   * @description       错误提示
+   * @default           -
+   */
   errorText?: string; // 错误的提示文字（本来是当做块来处理，ui不同意错误提示写在所有内容后面）
+  /**
+   * @description       新增标识
+   * @default           -
+   */
   add?: string; // 增加 multiple
+  /**
+   * @description       disabled
+   * @default           -
+   */
   disabled?: boolean; // 是否置灰
 }
 
@@ -106,13 +142,13 @@ const CombineInput: React.ForwardRefRenderFunction<
   };
 
   // 大块头 内 tag 点击删除
-  const onTagClose = function (
+  const onTagClose = function(
     e: React.MouseEvent<HTMLElement>,
     single: string,
   ) {
     e.preventDefault();
     let arr = [...multiple];
-    const index = arr.findIndex((e) => e === single);
+    const index = arr.findIndex(e => e === single);
     arr.splice(index, 1);
     triggerChange('', arr);
     setMultiple([...arr]);
@@ -159,7 +195,7 @@ const CombineInput: React.ForwardRefRenderFunction<
                 className="m-normal-tag"
                 closable
                 key={index}
-                onClose={(e) => onTagClose(e, single)}
+                onClose={e => onTagClose(e, single)}
               >
                 {single}
               </Tag>

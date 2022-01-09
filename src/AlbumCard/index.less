@@ -1,0 +1,51 @@
+.c-album-card-img-preview {
+  img {
+    display: initial;
+  }
+}
+.c-album-card {
+  text-align: center;
+  position: relative;
+  font-size: 0;
+  &--disabled {
+    opacity: 0.4;
+  }
+  & > .ant-image {
+    width: 100%;
+    font-size: 14px;
+  }
+  &-img {
+    height: 120px;
+    width: 100%;
+  }
+  &-info {
+    padding: 4px;
+    background: #004094;
+  }
+  &-title {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &-subtitle {
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 2px;
+    opacity: 0.6;
+  }
+  &-tag {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 2px 8px;
+  }
+}

@@ -1,0 +1,47 @@
+.c-rank-row {
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 14px;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    &-ranking {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      height: 18px;
+      width: 18px;
+      line-height: 16px;
+      text-align: center;
+      border: 1px solid red;
+      font-size: 12px;
+      margin-right: 08px;
+    }
+    &-label {
+      display: inline-block;
+      vertical-align: middle;
+      opacity: 0.8;
+    }
+    &-value {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  &-value {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &-percent {
+    width: 100%;
+    &--small {
+      height: 04px;
+    }
+    &--large {
+      height: 12px;
+    }
+  }
+}
